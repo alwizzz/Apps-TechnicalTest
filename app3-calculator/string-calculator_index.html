@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>String Calculator</title>
+    <link rel="stylesheet" href="string-calculator_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="string-calculator_script.js"></script>
+</head>
+<body>
+    <h1>String Calculator</h1>
+
+    <div class="rules-box">
+        <h3>Rules</h3>
+        <ul>
+            <li>Calculator can only calculate one operation with two numbers at one time</li>
+            <li>You must enter the operation consisting first number, operator, and second number (in order)</li>
+            <li>Every parts are separated by single space ' '</li>
+            <li>Any extra input will be ignored</li>
+            <li>Entering non number will stop the number parsing e.g. 112a32 -> 112</li>
+            <li>Number can not be more than 1000000 (1 million)</li>
+        </ul>
+        <h3>Supported operation: addition (+), substraction (-), multiplication(*), and division(/)</h3>
+    </div>
+ 
+    <div class="calculator-box">
+        <div class="flex-left">
+            <h2>Input Here</h2>
+        </div>
+        <div class="input-boxes">
+            <input type="text" id="operation" placeholder="Operation">
+            <span> = </span>
+            <input type="text" placeholder="Result" id="result" readonly>
+        </div>
+        <div class="flex-right">
+            <button id="button">calculate</button>
+        </div>
+    </div class="calculator-box">  
+   
+</body>
+
+
+
+</html>
