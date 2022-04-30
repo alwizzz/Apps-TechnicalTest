@@ -2,11 +2,12 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body {
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     background-color: beige;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -27px;
 }
 
 button {
@@ -16,10 +17,10 @@ button {
 }
 h1 {
     font-size: 40px;
-    background-color: coral;
+    background-color: burlywood;
     width: 100%;
     text-align: center;
-    padding: 30px 50px;
+    padding: 30px 50px; 
 }
 h2 {
     width: fit-content;

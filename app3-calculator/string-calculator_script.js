@@ -3,49 +3,8 @@ $(document).ready( function() {
     let resultBox = $('#result'); 
     let buttonBox = $('#button');
 
-    function kalkulator(operationBox){
-        let inputString = operationBox.val();
-        let inputArray = inputString.split(" ");
-        sanitize(inputArray);
-        
-        let leftOperand = parseFloat( inputArray[0] );
-        let operator = inputArray[1];
-        let rightOperand = parseFloat( inputArray[2] );
-        
-        let error = validate(leftOperand, operator, rightOperand);
-
-        // if error occured, stop code flow here
-        if( error != "clear" ){
-            return error;
-        }
-
-        // display back sanitized input string
-        operationBox.val( `${leftOperand.toString()} ${operator} ${rightOperand.toString()}`);
-
-        let result;
-        if( operator == "+"){
-            result = leftOperand + rightOperand;
-        } else if( operator == "-"){
-            result = leftOperand - rightOperand;
-        } else if( operator == "*"){
-            result = leftOperand * rightOperand;
-        } else if( operator == "/"){
-            result = leftOperand / rightOperand;
-        }
-
-        return result;
-
-        // console.log(error);
-        // console.log(`left: ${leftOperand}, operator: ${operator}, right: ${rightOperand}`);
-
-    }
-
-
-
-
-
     buttonBox.click( function() {
-        let result = kalkulator(operationBox);
+        let result = kalkulator(operationBox.val(), operationBox);
         if(typeof result == "string"){
             alert(result);
         } else {
@@ -53,9 +12,9 @@ $(document).ready( function() {
         }
     })
 
-
 })
 
+// Cleans up array so it is in appropiate format
 function sanitize(arr){
     // remove extra space
     for( let i=0; i < arr.length; i++ ){
@@ -69,25 +28,61 @@ function sanitize(arr){
     arr.splice(3, arr.length-1);
 }
 
+// Validate if inputs follow the rules
 function validate(left, op, right){
-    if( isNaN(left) && op == undefined && isNaN(right) ){
-        return "Please enter the operation first";
-    }
 
     if( isNaN(left) || op == undefined || isNaN(right) ){
-        return "Invalid Input! please check the rules";
+        return "Invalid Input!";
     }
 
     if( op != '+' && op != '-' && op != '*' && op != '/'){
-        return "Invalid Input: operator is not recognized or supported";
+        return "Invalid Input: operator is not recognized or supported!";
     }
 
     if( left > 1000000 || right > 1000000){
-        return "Invalid Input: inputted number can not be more than 1000000";
+        return "Invalid Input: number can not be more than 1000000 !";
     }
 
     
 
-    // if code reach here means no error
+    // if code reach here it means no error
     return "clear";
+}
+
+function kalkulator(inputString, operationBox = null){
+    let inputArray = inputString.split(" ");
+    sanitize(inputArray);
+    
+    let leftOperand = parseFloat( inputArray[0] );
+    let operator = inputArray[1];
+    let rightOperand = parseFloat( inputArray[2] );
+    
+    let error = validate(leftOperand, operator, rightOperand);
+
+    // if error occured, stop code flow here
+    if( error != "clear" ){
+        return error;
+    }
+
+    // display back sanitized input string
+    if(operationBox != null){
+        operationBox.val( `${leftOperand.toString()} ${operator} ${rightOperand.toString()}`);
+    }
+
+    let result;
+    if( operator == "+"){
+        result = leftOperand + rightOperand;
+    } else if( operator == "-"){
+        result = leftOperand - rightOperand;
+    } else if( operator == "*"){
+        result = leftOperand * rightOperand;
+    } else if( operator == "/"){
+        result = leftOperand / rightOperand;
+    }
+
+    return result;
+
+    // console.log(error);
+    // console.log(`left: ${leftOperand}, operator: ${operator}, right: ${rightOperand}`);
+
 }
