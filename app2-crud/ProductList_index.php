@@ -1,17 +1,29 @@
 <?php 
-    $json_file = file_get_contents("./ProductList_data.json");
-    $jsonArr = json_decode($json_file, true);
+    if( !file_exists("./ProductList_data.json") ){
+        if( !file_exists("./default_data.json") ){
+            die("Important files are missing!");
+        }
 
-    if( isset( $_GET['key'])){
-        echo "<script>confirm(\"Are you sure want to delete x?\")</script>";
+        $file = fopen("ProductList_data.json", "w") or die("Unable to open file!");
+        fclose($file);
+
+        $json_default = file_get_contents("./default_data.json");
+        file_put_contents("./ProductList_data.json", $json_default); 
     }
 
-    //if confirm() return true
+    if( isset( $_POST['refresh'])){
+        if( !file_exists("./default_data.json") ){
+            echo '<script>alert("default_data.json file is missing! Refresh failed!");</script>';
+        } else {
+            $json_default = file_get_contents("./default_data.json");
+            file_put_contents("./ProductList_data.json", $json_default); 
+        }
 
+        unset( $_POST['refresh']);
+    }
 
-    //if confirm() return false
-
-
+    $json_file = file_get_contents("./ProductList_data.json");
+    $jsonArr = json_decode($json_file, true);
 
 ?>
 
@@ -28,10 +40,16 @@
 </head>
 <body>
 
-<div class="container mt-3 d-flex flex-column">
+<div class="container mt-3">
     <h1>Product List</h1>
 
-    <a href="ProductList_add.php" class="btn btn-success mt-2 md-2" style="width: 100px">Add</a>
+    <div class="container d-flex align-items-start">
+        <a href="ProductList_add.php" class="btn btn-success mx-2" >Add</a>
+        <form action="<?= $_SERVER["PHP_SELF"]; ?>" method="post">
+            <input type="submit" class="btn btn-secondary" name="refresh" value="Refresh"
+                onclick='return confirm("Are you sure want to refresh the data to default?");'>
+        </form>
+    </div>
 
     <table class="table table-stripped table-hover">
     <thead>
@@ -56,10 +74,9 @@
                     <a class="btn btn-info" href="ProductList_detail.php?key=<?= $key;?>">Detail</a>
                     <a class="btn btn-warning" href="ProductList_edit.php?key=<?= $key;?>">Edit</a>
                     <a class="btn btn-danger" href="ProductList_remove.php?key=<?= $key; ?>"
-                    onclick="return confirm('Are you sure you want to remove this product?')">
+                            onclick="return confirm('Are you sure you want to remove this product?')">
                         Remove
                     </a>
-                    <!-- <form action="ProductList_remove.php" method="post"></form> -->
                 </td>
             </tr>
         <?php endforeach; ?>

@@ -1,34 +1,4 @@
 {
-    "Lenovo-Ideapad-Flex-5": {
-        "name": "Lenovo Ideapad Flex 5",
-        "producer": "Lenovo",
-        "processor": "Intel i5",
-        "RAM": 8,
-        "displaySize": 14,
-        "displayResolution": 1080,
-        "storageCapacity": 512,
-        "storageModel": "SSD",
-        "launch": "September 2020",
-        "weight": 1.5,
-        "height": 21.8,
-        "width": 32.1,
-        "thickness": 2.1
-    },
-    "HP-Omen-16": {
-        "name": "HP Omen 16",
-        "producer": "HP",
-        "processor": "AMD Ryzen 7",
-        "RAM": 16,
-        "displaySize": 16.1,
-        "displayResolution": 1080,
-        "storageCapacity": 512,
-        "storageModel": "SSD",
-        "launch": "January 2021",
-        "weight": 2.3,
-        "height": 24.8,
-        "width": 36.9,
-        "thickness": 2.3
-    },
     "Acer-Nitro-5": {
         "name": "Acer Nitro 5",
         "producer": "Acer",
@@ -58,5 +28,35 @@
         "height": 23,
         "width": 34.4,
         "thickness": 1.2
+    },
+    "Lenovo-Ideapad-Flex-6": {
+        "name": "Lenovo Ideapad Flex 6",
+        "producer": "Lenovo",
+        "processor": "Intel i5",
+        "RAM": "8",
+        "displaySize": "14",
+        "displayResolution": "1080",
+        "storageCapacity": "512",
+        "storageModel": "SSD",
+        "launch": "September 2020",
+        "weight": "1.5",
+        "height": "21.8",
+        "width": "32.1",
+        "thickness": "2.1"
+    },
+    "HP-Omen-16": {
+        "name": "HP Omen 16",
+        "producer": "HP",
+        "processor": "AMD Ryzen 7",
+        "RAM": "16",
+        "displaySize": "16.1",
+        "displayResolution": "1080",
+        "storageCapacity": "512",
+        "storageModel": "SSD",
+        "launch": "January 2021",
+        "weight": "2.3",
+        "height": "24.8",
+        "width": "36.9",
+        "thickness": "2.3"
     }
 }

@@ -1,4 +1,12 @@
 <?php 
+
+    if( !file_exists("./ProductList_data.json") ){
+        die(
+            'ProductList_data.json is missing <br>
+            <a href="ProductList_index.php">Back to Home</a>'
+        );
+    }
+
     $json_file = file_get_contents("./ProductList_data.json");
     $jsonArr = json_decode($json_file, true);
     $data = $jsonArr[$_GET['key']];
@@ -16,15 +24,12 @@
 
     function isDuplicate($arr, $newSlug, $currentSlug){
         foreach($arr as $key => $value){
-            if($key != $currentSlug && $key == $newSlug){
+            if($key != $currentSlug && strcasecmp($key,$newSlug) == 0){
                 return true;
             }
         }
-
         return false;
     }
-
-    
 
     if( isset($_POST['submit']))
     {
@@ -57,20 +62,12 @@
                 unset($jsonArr[$currentSlug]);
             }
             
-            // print_r($jsonArr);
             $jsonEncode = json_encode($jsonArr, 128); //JSON_PRETTY_PRINT
-            // print_r($jsonEncode);
             file_put_contents("./ProductList_data.json", $jsonEncode); 
             $success = true;
-
         }
-        
-
     }
-
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -98,7 +95,8 @@
         </div>
     <?php $dupes = false; endif; ?>
 
-    <a href="ProductList_index.php" class="btn btn-primary">Back to Home</a>
+    <a href="ProductList_index.php" class="btn btn-primary my-2">Back to Home</a>
+    
 
     <form action="" method="post">
         <label for="name">Name</label>
@@ -193,17 +191,7 @@
 
         <input type="submit" class="btn btn-success" name="submit">
     </form>
-
-
 </div>
-
-
-
-
-
-
-
-
 
 </body>
 </html>

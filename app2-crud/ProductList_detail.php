@@ -1,11 +1,16 @@
 <?php 
+    if( !file_exists("./ProductList_data.json") ){
+        die(
+            'ProductList_data.json is missing <br>
+            <a href="ProductList_index.php">Back to Home</a>'
+        );
+    }
+
     $json_file = file_get_contents("./ProductList_data.json");
     $json = json_decode($json_file, true);
 
     $data = $json[$_GET['key']];
-
 ?>
-
 
 
 <!DOCTYPE html>
@@ -44,14 +49,6 @@
         </div>
     </div>
 </div>
-
-
-
-</div>
-
-
-
-
 
 </body>
 </html>

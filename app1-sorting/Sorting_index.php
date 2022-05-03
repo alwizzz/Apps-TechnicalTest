@@ -1,5 +1,16 @@
 <?php 
-    // $json_file = file_get_contents("./Sorting_data.json");
+    if( !file_exists("./Sorting_data.json") ){
+        if( !file_exists("./default_data.json") ){
+            die("Important files are missing!");
+        }
+
+        $file = fopen("Sorting_data.json", "w") or die("Unable to open file!");
+        fclose($file);
+
+        $json_default = file_get_contents("./default_data.json");
+        file_put_contents("./Sorting_data.json", $json_default); 
+    }
+
     $json_file = file_get_contents("./Sorting_data.json");
     $jsonArr = json_decode($json_file, true);
 

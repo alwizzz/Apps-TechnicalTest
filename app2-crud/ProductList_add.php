@@ -1,6 +1,18 @@
 <?php 
     $success = false;
     $dupes =  false;
+
+    if( !file_exists("./ProductList_data.json") ){
+        die(
+            'ProductList_data.json is missing <br>
+            <a href="ProductList_index.php">Back to Home</a>'
+        );
+    }
+
+    $json_file = file_get_contents("./ProductList_data.json");
+    $jsonArr = json_decode($json_file, true);
+
+
     function previousValue($key, $default = ""){
         if (isset($_POST[$key])){
             return htmlspecialchars( $_POST[$key] );
@@ -11,16 +23,13 @@
 
     function isDuplicate($arr, $slug){
         foreach($arr as $key => $value){
-            if($key == $slug){
+            if(strcasecmp($key,$slug) == 0){
                 return true;
             }
         }
 
         return false;
     }
-
-    $json_file = file_get_contents("./ProductList_data.json");
-    $jsonArr = json_decode($json_file, true);
 
     if( isset($_POST['submit']))
     {
@@ -43,28 +52,17 @@
                 "width" => $_POST['width'],
                 "thickness" => $_POST['thickness'],
             );
-                
-            // echo "<script>alert(\"hello\");</script>";
-            // print_r($newProduct);
             
             $jsonArr[$slug] = $newProduct;
-            
-            // print_r($jsonArr);
             $jsonEncode = json_encode($jsonArr, 128); //JSON_PRETTY_PRINT
-            // print_r($jsonEncode);
             file_put_contents("./ProductList_data.json", $jsonEncode); 
             $success = true;
-
         }
         else {
             $dupes = true;
         }
-
     }
-
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -92,7 +90,7 @@
         </div>
     <?php $dupes = false; endif; ?>
 
-    <a href="ProductList_index.php" class="btn btn-primary">Back to Home</a>
+    <a href="ProductList_index.php" class="btn btn-primary my-2">Back to Home</a>
 
     <form action="" method="post">
         <label for="name">Name</label>
@@ -187,17 +185,7 @@
 
         <input type="submit" class="btn btn-success" name="submit">
     </form>
-
-
 </div>
-
-
-
-
-
-
-
-
 
 </body>
 </html>

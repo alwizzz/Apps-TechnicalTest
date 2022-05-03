@@ -1,6 +1,14 @@
 <?php 
     if( isset( $_GET['key'])){
         $slug = $_GET['key'];
+
+        if( !file_exists("./ProductList_data.json") ){
+            die(
+                'ProductList_data.json is missing <br>
+                <a href="ProductList_index.php">Back to Home</a>'
+            );
+        }
+        
         $json_file = file_get_contents("./ProductList_data.json");
         $jsonArr = json_decode($json_file, true);
 
@@ -12,7 +20,6 @@
 
                 echo '
                 <script>
-                    alert("Product has been removed"); 
                     window.location.href="ProductList_index.php";
                 </script>';
             }
