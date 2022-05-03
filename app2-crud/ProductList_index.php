@@ -21,7 +21,7 @@
 <div class="container mt-3 d-flex flex-column">
     <h1>Product List</h1>
 
-    <button class="btn btn-success mt-2 md-2" style="width: 100px">Add</button>
+    <a href="ProductList_add.php" class="btn btn-success mt-2 md-2" style="width: 100px">Add</a>
 
     <table class="table table-stripped table-hover">
     <thead>

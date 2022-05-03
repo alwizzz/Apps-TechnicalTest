@@ -14,7 +14,6 @@
         "width": 32.1,
         "thickness": 2.1
     },
-
     "HP-Omen-16": {
         "name": "HP Omen 16",
         "producer": "HP",
@@ -30,7 +29,6 @@
         "width": 36.9,
         "thickness": 2.3
     },
-
     "Acer-Nitro-5": {
         "name": "Acer Nitro 5",
         "producer": "Acer",
@@ -46,7 +44,6 @@
         "width": 36.3,
         "thickness": 2.4
     },
-
     "Dell-Precision-15": {
         "name": "Dell Precision 15",
         "producer": "Dell",
@@ -61,7 +58,20 @@
         "height": 23,
         "width": 34.4,
         "thickness": 1.2
+    },
+    "Acer-XX": {
+        "name": "Acer XX",
+        "producer": "Acer",
+        "processor": "Intel i5",
+        "RAM": "12",
+        "displaySize": "15",
+        "displayResolution": "1080",
+        "storageCapacity": "252",
+        "storageModel": "SSD",
+        "launch": "May 2021",
+        "weight": "2",
+        "height": "21",
+        "width": "31",
+        "thickness": "2"
     }
-
-
 }

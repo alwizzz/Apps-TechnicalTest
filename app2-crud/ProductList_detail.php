@@ -37,7 +37,7 @@
                     <li class="list-group-item"><b>Thickness:</b> <?= $data['thickness']?> Cm</li>
                 </ul>
                 <br>
-                <a href="ProductList_index.php" class="btn btn-success">Back to Home</a>
+                <a href="ProductList_index.php" class="btn btn-primary">Back to Home</a>
 
             </div>
         </div>
