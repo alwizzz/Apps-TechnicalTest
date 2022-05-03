@@ -1,0 +1,602 @@
+[
+    {
+        "nama": "Indomie",
+        "harga": 3000,
+        "rating": 5,
+        "likes": 150
+    },
+    {
+        "nama": "Laptop",
+        "harga": 4000000,
+        "rating": 4.5,
+        "likes": 123
+    },
+    {
+        "nama": "Aqua",
+        "harga": 3000,
+        "rating": 4,
+        "likes": 250
+    },
+    {
+        "nama": "Smart TV",
+        "harga": 4000000,
+        "rating": 4.5,
+        "likes": 42
+    },
+    {
+        "nama": "Headphone",
+        "harga": 4000000,
+        "rating": 3.5,
+        "likes": 90
+    },
+    {
+        "nama": "Very Smart TV",
+        "harga": 4000000,
+        "rating": 3.5,
+        "likes": 87
+    },
+    {
+        "nama": "Wine - Sawmill Creek Autumn",
+        "harga": 22500,
+        "rating": 1.1,
+        "likes": 777
+    },
+    {
+        "nama": "Rappini - Andy Boy",
+        "harga": 2500,
+        "rating": 3.2,
+        "likes": 462
+    },
+    {
+        "nama": "Tuna - Salad Premix",
+        "harga": 15000,
+        "rating": 4.4,
+        "likes": 43
+    },
+    {
+        "nama": "Hagen Daza - Dk Choocolate",
+        "harga": 2500,
+        "rating": 3.8,
+        "likes": 718
+    },
+    {
+        "nama": "Table Cloth 91x91 Colour",
+        "harga": 2500,
+        "rating": 3.2,
+        "likes": 269
+    },
+    {
+        "nama": "Avocado",
+        "harga": 2500,
+        "rating": 3.8,
+        "likes": 494
+    },
+    {
+        "nama": "Bar - Granola Trail Mix Fruit Nut",
+        "harga": 5000,
+        "rating": 2,
+        "likes": 354
+    },
+    {
+        "nama": "Wine - Sauvignon Blanc Oyster",
+        "harga": 2500,
+        "rating": 4.1,
+        "likes": 801
+    },
+    {
+        "nama": "Muffins - Assorted",
+        "harga": 25000,
+        "rating": 4.1,
+        "likes": 648
+    },
+    {
+        "nama": "Rice Pilaf, Dry,package",
+        "harga": 25000,
+        "rating": 3.1,
+        "likes": 140
+    },
+    {
+        "nama": "Cheese - Comte",
+        "harga": 17500,
+        "rating": 2.2,
+        "likes": 954
+    },
+    {
+        "nama": "Appetizer - Veg Assortment",
+        "harga": 2500,
+        "rating": 1.5,
+        "likes": 450
+    },
+    {
+        "nama": "Beef - Striploin Aa",
+        "harga": 15000,
+        "rating": 1.5,
+        "likes": 454
+    },
+    {
+        "nama": "Ocean Spray - Kiwi Strawberry",
+        "harga": 22500,
+        "rating": 1.5,
+        "likes": 377
+    },
+    {
+        "nama": "Pork - Loin, Boneless",
+        "harga": 12500,
+        "rating": 2.1,
+        "likes": 778
+    },
+    {
+        "nama": "Wooden Mop Handle",
+        "harga": 27500,
+        "rating": 3.7,
+        "likes": 88
+    },
+    {
+        "nama": "Salmon Atl.whole 8 - 10 Lb",
+        "harga": 5000,
+        "rating": 4.6,
+        "likes": 213
+    },
+    {
+        "nama": "Liners - Banana, Paper",
+        "harga": 25000,
+        "rating": 3.5,
+        "likes": 498
+    },
+    {
+        "nama": "Kellogs Special K Cereal",
+        "harga": 27500,
+        "rating": 3.6,
+        "likes": 332
+    },
+    {
+        "nama": "Wine - Sogrape Mateus Rose",
+        "harga": 2500,
+        "rating": 5,
+        "likes": 183
+    },
+    {
+        "nama": "Chilli Paste, Hot Sambal Oelek",
+        "harga": 10000,
+        "rating": 2,
+        "likes": 871
+    },
+    {
+        "nama": "Coffee - Cafe Moreno",
+        "harga": 27500,
+        "rating": 4.4,
+        "likes": 959
+    },
+    {
+        "nama": "Beer - Blue",
+        "harga": 22500,
+        "rating": 1.6,
+        "likes": 509
+    },
+    {
+        "nama": "Bread Sour Rolls",
+        "harga": 12500,
+        "rating": 4.6,
+        "likes": 883
+    },
+    {
+        "nama": "Danishes - Mini Cheese",
+        "harga": 17500,
+        "rating": 3.4,
+        "likes": 253
+    },
+    {
+        "nama": "Long Island Ice Tea",
+        "harga": 27500,
+        "rating": 2.6,
+        "likes": 206
+    },
+    {
+        "nama": "Haggis",
+        "harga": 15000,
+        "rating": 4.7,
+        "likes": 464
+    },
+    {
+        "nama": "Orange Roughy 6\/8 Oz",
+        "harga": 17500,
+        "rating": 1.6,
+        "likes": 874
+    },
+    {
+        "nama": "Rice - Brown",
+        "harga": 2500,
+        "rating": 4.1,
+        "likes": 969
+    },
+    {
+        "nama": "Muffin Mix - Lemon Cranberry",
+        "harga": 10000,
+        "rating": 3.2,
+        "likes": 653
+    },
+    {
+        "nama": "Cheese Cheddar Processed",
+        "harga": 22500,
+        "rating": 4.2,
+        "likes": 97
+    },
+    {
+        "nama": "Food Colouring - Orange",
+        "harga": 17500,
+        "rating": 4,
+        "likes": 336
+    },
+    {
+        "nama": "Sausage - Liver",
+        "harga": 27500,
+        "rating": 1.9,
+        "likes": 793
+    },
+    {
+        "nama": "Extract - Almond",
+        "harga": 2500,
+        "rating": 1.6,
+        "likes": 916
+    },
+    {
+        "nama": "Meldea Green Tea Liquor",
+        "harga": 27500,
+        "rating": 2.4,
+        "likes": 222
+    },
+    {
+        "nama": "Oil - Grapeseed Oil",
+        "harga": 27500,
+        "rating": 3,
+        "likes": 80
+    },
+    {
+        "nama": "Cheese - Gouda Smoked",
+        "harga": 27500,
+        "rating": 1.5,
+        "likes": 527
+    },
+    {
+        "nama": "Pur Source",
+        "harga": 10000,
+        "rating": 4.7,
+        "likes": 699
+    },
+    {
+        "nama": "Pork - Loin, Center Cut",
+        "harga": 25000,
+        "rating": 2.1,
+        "likes": 577
+    },
+    {
+        "nama": "Pork - Suckling Pig",
+        "harga": 20000,
+        "rating": 1.9,
+        "likes": 723
+    },
+    {
+        "nama": "Apple - Delicious, Golden",
+        "harga": 10000,
+        "rating": 3.8,
+        "likes": 174
+    },
+    {
+        "nama": "Banana - Green",
+        "harga": 10000,
+        "rating": 2.8,
+        "likes": 711
+    },
+    {
+        "nama": "Muffin Hinge Container 6",
+        "harga": 17500,
+        "rating": 4.3,
+        "likes": 702
+    },
+    {
+        "nama": "Olive - Spread Tapenade",
+        "harga": 7500,
+        "rating": 1.8,
+        "likes": 439
+    },
+    {
+        "nama": "Appetizer - Shrimp Puff",
+        "harga": 17500,
+        "rating": 3.6,
+        "likes": 80
+    },
+    {
+        "nama": "Soup - Boston Clam Chowder",
+        "harga": 27500,
+        "rating": 4.8,
+        "likes": 290
+    },
+    {
+        "nama": "Capers - Pickled",
+        "harga": 20000,
+        "rating": 2.8,
+        "likes": 834
+    },
+    {
+        "nama": "Wine - Rhine Riesling Wolf Blass",
+        "harga": 25000,
+        "rating": 4.4,
+        "likes": 818
+    },
+    {
+        "nama": "Jolt Cola",
+        "harga": 15000,
+        "rating": 4,
+        "likes": 503
+    },
+    {
+        "nama": "Tea - Black Currant",
+        "harga": 2500,
+        "rating": 2.3,
+        "likes": 5
+    },
+    {
+        "nama": "Aspic - Amber",
+        "harga": 15000,
+        "rating": 3.9,
+        "likes": 420
+    },
+    {
+        "nama": "Cardamon Seed \/ Pod",
+        "harga": 7500,
+        "rating": 3.7,
+        "likes": 374
+    },
+    {
+        "nama": "Stock - Beef, Brown",
+        "harga": 5000,
+        "rating": 4.1,
+        "likes": 534
+    },
+    {
+        "nama": "Wine - Baron De Rothschild",
+        "harga": 2500,
+        "rating": 2.6,
+        "likes": 679
+    },
+    {
+        "nama": "Pork - Ham Hocks - Smoked",
+        "harga": 17500,
+        "rating": 2.3,
+        "likes": 494
+    },
+    {
+        "nama": "Seedlings - Buckwheat, Organic",
+        "harga": 17500,
+        "rating": 4.3,
+        "likes": 129
+    },
+    {
+        "nama": "Tart Shells - Barquettes, Savory",
+        "harga": 22500,
+        "rating": 1.6,
+        "likes": 114
+    },
+    {
+        "nama": "Potatoes - Yukon Gold, 80 Ct",
+        "harga": 17500,
+        "rating": 2.5,
+        "likes": 657
+    },
+    {
+        "nama": "Tabasco Sauce, 2 Oz",
+        "harga": 2500,
+        "rating": 4.3,
+        "likes": 531
+    },
+    {
+        "nama": "Shopper Bag - S - 4",
+        "harga": 10000,
+        "rating": 1.2,
+        "likes": 402
+    },
+    {
+        "nama": "Flour - Cake",
+        "harga": 10000,
+        "rating": 1.8,
+        "likes": 210
+    },
+    {
+        "nama": "Rosemary - Fresh",
+        "harga": 10000,
+        "rating": 1.6,
+        "likes": 922
+    },
+    {
+        "nama": "Wine - Lamancha Do Crianza",
+        "harga": 10000,
+        "rating": 5,
+        "likes": 654
+    },
+    {
+        "nama": "Soup - Cream Of Broccoli, Dry",
+        "harga": 27500,
+        "rating": 2.6,
+        "likes": 635
+    },
+    {
+        "nama": "Sauce - Salsa",
+        "harga": 2500,
+        "rating": 3.8,
+        "likes": 689
+    },
+    {
+        "nama": "Bagel - Sesame Seed Presliced",
+        "harga": 22500,
+        "rating": 4.7,
+        "likes": 290
+    },
+    {
+        "nama": "Transfer Sheets",
+        "harga": 20000,
+        "rating": 1.2,
+        "likes": 966
+    },
+    {
+        "nama": "Bread - Granary Small Pull",
+        "harga": 25000,
+        "rating": 4,
+        "likes": 428
+    },
+    {
+        "nama": "Broom - Push",
+        "harga": 10000,
+        "rating": 1.2,
+        "likes": 628
+    },
+    {
+        "nama": "Cranberries - Frozen",
+        "harga": 2500,
+        "rating": 2.4,
+        "likes": 757
+    },
+    {
+        "nama": "Juice - Clam, 46 Oz",
+        "harga": 10000,
+        "rating": 3.7,
+        "likes": 889
+    },
+    {
+        "nama": "Wine - Sake",
+        "harga": 22500,
+        "rating": 4.2,
+        "likes": 645
+    },
+    {
+        "nama": "Seabream Whole Farmed",
+        "harga": 5000,
+        "rating": 4.5,
+        "likes": 976
+    },
+    {
+        "nama": "Spoon - Soup, Plastic",
+        "harga": 5000,
+        "rating": 4.4,
+        "likes": 428
+    },
+    {
+        "nama": "Lettuce - Frisee",
+        "harga": 20000,
+        "rating": 4.1,
+        "likes": 239
+    },
+    {
+        "nama": "Mushroom - Trumpet, Dry",
+        "harga": 7500,
+        "rating": 1.6,
+        "likes": 508
+    },
+    {
+        "nama": "Wine - Piper Heidsieck Brut",
+        "harga": 2500,
+        "rating": 4.7,
+        "likes": 547
+    },
+    {
+        "nama": "Onions - Dried, Chopped",
+        "harga": 12500,
+        "rating": 2.2,
+        "likes": 949
+    },
+    {
+        "nama": "Lettuce - Sea \/ Sea Asparagus",
+        "harga": 27500,
+        "rating": 4.5,
+        "likes": 57
+    },
+    {
+        "nama": "Bread - Bistro Sour",
+        "harga": 12500,
+        "rating": 4.9,
+        "likes": 840
+    },
+    {
+        "nama": "Dill Weed - Dry",
+        "harga": 25000,
+        "rating": 2.3,
+        "likes": 612
+    },
+    {
+        "nama": "Dragon Fruit",
+        "harga": 20000,
+        "rating": 3.2,
+        "likes": 321
+    },
+    {
+        "nama": "Tomatoes - Cherry, Yellow",
+        "harga": 7500,
+        "rating": 3.8,
+        "likes": 525
+    },
+    {
+        "nama": "Temperature Recording Station",
+        "harga": 2500,
+        "rating": 3.4,
+        "likes": 18
+    },
+    {
+        "nama": "Wine - White, Ej",
+        "harga": 15000,
+        "rating": 2.2,
+        "likes": 949
+    },
+    {
+        "nama": "Lentils - Red, Dry",
+        "harga": 12500,
+        "rating": 3.8,
+        "likes": 194
+    },
+    {
+        "nama": "Longan",
+        "harga": 17500,
+        "rating": 1.3,
+        "likes": 152
+    },
+    {
+        "nama": "Potatoes - Yukon Gold, 80 Ct",
+        "harga": 15000,
+        "rating": 3.5,
+        "likes": 774
+    },
+    {
+        "nama": "Sauce - Soy Low Sodium - 3.87l",
+        "harga": 25000,
+        "rating": 1.8,
+        "likes": 438
+    },
+    {
+        "nama": "Steel Wool S.o.s",
+        "harga": 15000,
+        "rating": 4.1,
+        "likes": 432
+    },
+    {
+        "nama": "Lychee - Canned",
+        "harga": 12500,
+        "rating": 4.7,
+        "likes": 410
+    },
+    {
+        "nama": "Coffee Swiss Choc Almond",
+        "harga": 12500,
+        "rating": 1.6,
+        "likes": 18
+    },
+    {
+        "nama": "Wine - Bourgogne 2002, La",
+        "harga": 27500,
+        "rating": 2.8,
+        "likes": 64
+    },
+    {
+        "nama": "Veal - Ground",
+        "harga": 17500,
+        "rating": 3.6,
+        "likes": 804
+    }
+]

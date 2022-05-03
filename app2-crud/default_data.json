@@ -50,7 +50,7 @@
         "processor": "Intel i9",
         "RAM": 16,
         "displaySize": 15.6,
-        "displayResolution": "1200p",
+        "displayResolution": 1200,
         "storageCapacity": 1024,
         "storageModel": "SSD",
         "launch": "May 2021",
