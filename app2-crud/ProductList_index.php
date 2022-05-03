@@ -1,7 +1,17 @@
 <?php 
     $json_file = file_get_contents("./ProductList_data.json");
-    $json = json_decode($json_file, true);
-    // print_r($_GET['a']);
+    $jsonArr = json_decode($json_file, true);
+
+    if( isset( $_GET['key'])){
+        echo "<script>confirm(\"Are you sure want to delete x?\")</script>";
+    }
+
+    //if confirm() return true
+
+
+    //if confirm() return false
+
+
 
 ?>
 
@@ -35,7 +45,7 @@
         </tr>
     </thead>
     <tbody>
-        <?php $counter=1; foreach( $json as $key => $array ) :?>
+        <?php $counter=1; foreach( $jsonArr as $key => $array ) :?>
             <tr>
                 <th scope="row"><?= $counter++ ?></th>
                 <td><?= $array['name'] ?></td>
@@ -45,7 +55,11 @@
                 <td>
                     <a class="btn btn-info" href="ProductList_detail.php?key=<?= $key;?>">Detail</a>
                     <a class="btn btn-warning" href="ProductList_edit.php?key=<?= $key;?>">Edit</a>
-                    <a class="btn btn-danger" >Remove</a>
+                    <a class="btn btn-danger" href="ProductList_remove.php?key=<?= $key; ?>"
+                    onclick="return confirm('Are you sure you want to remove this product?')">
+                        Remove
+                    </a>
+                    <!-- <form action="ProductList_remove.php" method="post"></form> -->
                 </td>
             </tr>
         <?php endforeach; ?>
