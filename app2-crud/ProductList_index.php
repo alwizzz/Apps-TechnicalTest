@@ -43,10 +43,9 @@
                 <td><?= $array['RAM'] ?> GB</td>
                 <td><?= "{$array['storageModel']} {$array['storageCapacity']}" ?> GB</td>
                 <td>
-
                     <a class="btn btn-info" href="ProductList_detail.php?key=<?= $key;?>">Detail</a>
-                    <a class="btn btn-warning" href="ProductList_edit.php">Edit</a>
-                    <a class="btn btn-danger">Remove</a>
+                    <a class="btn btn-warning" href="ProductList_edit.php?key=<?= $key;?>">Edit</a>
+                    <a class="btn btn-danger" >Remove</a>
                 </td>
             </tr>
         <?php endforeach; ?>

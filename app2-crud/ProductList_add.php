@@ -1,9 +1,9 @@
 <?php 
     $success = false;
     $dupes =  false;
-    function previousValue($name, $default = ""){
-        if (isset($_POST[$name])){
-            return htmlspecialchars( $_POST[$name] );
+    function previousValue($key, $default = ""){
+        if (isset($_POST[$key])){
+            return htmlspecialchars( $_POST[$key] );
         } else {
             return $default;
         }
@@ -126,7 +126,7 @@
 
         <label for="displaySize">Display Size</label>
         <div class="input-group mb-3" style="width:200px">
-            <input type="number" min="1" class="form-control" name="displaySize" value="<?= previousValue("displaySize")?>">
+            <input type="number" step="any" min="1" class="form-control" name="displaySize" value="<?= previousValue("displaySize")?>">
             <div class="input-group-append">
                 <span class="input-group-text"> inch</span>
             </div>
@@ -155,7 +155,7 @@
 
         <label for="weight">Weight</label>
         <div class="input-group mb-3" style="width:200px">
-            <input type="number" min="1" class="form-control" name="weight" value="<?= previousValue("weight")?>">
+            <input type="number" step="any" min="1" class="form-control" name="weight" value="<?= previousValue("weight")?>">
             <div class="input-group-append">
                 <span class="input-group-text"> Kg</span>
             </div>
@@ -163,7 +163,7 @@
 
         <label for="height">Height</label>
         <div class="input-group mb-3" style="width:200px">
-            <input type="number" min="1" class="form-control" name="height" value="<?= previousValue("height")?>">
+            <input type="number" step="any" min="1" class="form-control" name="height" value="<?= previousValue("height")?>">
             <div class="input-group-append">
                 <span class="input-group-text"> Cm</span>
             </div>
@@ -171,7 +171,7 @@
 
         <label for="width">Width</label>
         <div class="input-group mb-3" style="width:200px">
-            <input type="number" min="1" class="form-control" name="width" value="<?= previousValue("width")?>">
+            <input type="number" step="any" min="1" class="form-control" name="width" value="<?= previousValue("width")?>">
             <div class="input-group-append">
                 <span class="input-group-text"> Cm</span>
             </div>
@@ -179,7 +179,7 @@
 
         <label for="thickness">Thickness</label>
         <div class="input-group mb-3" style="width:200px">
-            <input type="number" min="1" class="form-control" name="thickness" value="<?= previousValue("thickness")?>">
+            <input type="number" step="any" min="1" class="form-control" name="thickness" value="<?= previousValue("thickness")?>">
             <div class="input-group-append">
                 <span class="input-group-text"> Cm</span>
             </div>

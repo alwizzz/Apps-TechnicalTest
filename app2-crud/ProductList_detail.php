@@ -25,11 +25,12 @@
             <div class="col-md-10 col-12">
                 <h1>Detail of <?= $data['name']; ?></h1>
                 <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Launch Date:</b> <?= $data['launch']; ?></li>
                     <li class="list-group-item"><b>Producer:</b> <?= $data['producer']; ?></li>
                     <li class="list-group-item"><b>Processor:</b> <?= $data['processor']; ?></li>
                     <li class="list-group-item"><b>RAM:</b> <?= $data['RAM']; ?> GB</li>
                     <li class="list-group-item"><b>Display Size:</b> <?= $data['displaySize']?> inch</li>
-                    <li class="list-group-item"><b>Display Resolution:</b> <?= $data['displayResolution']?></li>
+                    <li class="list-group-item"><b>Display Resolution:</b> <?= $data['displayResolution']?>p</li>
                     <li class="list-group-item"><b>Storage:</b> <?= "{$data['storageModel']} {$data['storageCapacity']}" ?> GB</li>
                     <li class="list-group-item"><b>Weight:</b> <?= $data['weight']?> Kg</li>
                     <li class="list-group-item"><b>Width:</b> <?= $data['width']?> Cm</li>
