@@ -1,6 +1,5 @@
 {
     "Lenovo-Ideapad-Flex-5": {
-        "name": "Lenovo Ideapad Flex 5",
         "producer": "Lenovo",
         "processor": "Intel i5",
         "RAM": 8,
@@ -16,7 +15,6 @@
     },
 
     "HP-Omen-16": {
-        "name": "HP Omen 16",
         "producer": "HP",
         "processor": "AMD Ryzen 7",
         "RAM": 16,
@@ -32,7 +30,6 @@
     },
 
     "Acer-Nitro-5": {
-        "name": "Acer Nitro 5",
         "producer": "Acer",
         "processor": "Intel i7",
         "RAM": 32,
@@ -47,8 +44,7 @@
         "thickness": 2.4
     },
 
-    "Dell-Precision-15": {
-        "name": "Dell Precision 15",
+    "Dell Precision 15": {
         "producer": "Dell",
         "processor": "Intel i9",
         "RAM": 16,
