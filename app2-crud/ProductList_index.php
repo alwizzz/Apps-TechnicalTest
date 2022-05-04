@@ -4,6 +4,7 @@
             die("Important files are missing!");
         }
 
+        // Force Refresh
         $file = fopen("ProductList_data.json", "w") or die("Unable to open file!");
         fclose($file);
 
@@ -11,6 +12,7 @@
         file_put_contents("./ProductList_data.json", $json_default); 
     }
 
+    // Refresh
     if( isset( $_POST['refresh'])){
         if( !file_exists("./default_data.json") ){
             echo '<script>alert("default_data.json file is missing! Refresh failed!");</script>';
@@ -71,12 +73,18 @@
                 <td><?= $array['RAM'] ?> GB</td>
                 <td><?= "{$array['storageModel']} {$array['storageCapacity']}" ?> GB</td>
                 <td>
-                    <a class="btn btn-info" href="ProductList_detail.php?key=<?= $key;?>">Detail</a>
-                    <a class="btn btn-warning" href="ProductList_edit.php?key=<?= $key;?>">Edit</a>
-                    <a class="btn btn-danger" href="ProductList_remove.php?key=<?= $key; ?>"
-                            onclick="return confirm('Are you sure you want to remove this product?')">
-                        Remove
-                    </a>
+                    <div class="container d-flex">
+                        <a class="btn btn-info mx-1" href="ProductList_detail.php?key=<?= $key;?>">Detail</a>
+                        <a class="btn btn-warning mx-1" href="ProductList_edit.php?key=<?= $key;?>">Edit</a>
+                        <!-- <a class="btn btn-danger" href="ProductList_remove.php?key=<?= $key; ?>"
+                                onclick="return confirm('Are you sure you want to remove this product?')">
+                            Remove
+                        </a> -->
+                        <form action="ProductList_remove.php" method="post">
+                            <input type="text" value="<?= $key;?>" hidden name="key">
+                            <input type="submit" class="btn btn-danger mx-1" value="Remove" name="remove">
+                        </form>
+                    </div>
                 </td>
             </tr>
         <?php endforeach; ?>

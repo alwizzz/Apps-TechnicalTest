@@ -1,15 +1,27 @@
 <?php 
+    if( !isset( $_GET['key']) ){
+        // redirect to home
+        echo '
+        <script>
+            window.location.href="ProductList_index.php";
+        </script>';
+    } 
+
     if( !file_exists("./ProductList_data.json") ){
-        die(
-            'ProductList_data.json is missing <br>
-            <a href="ProductList_index.php">Back to Home</a>'
-        );
+        echo '
+        <script>
+            alert("A file is missing!");
+            window.location.href="ProductList_index.php";
+        </script>';
     }
 
     $json_file = file_get_contents("./ProductList_data.json");
-    $json = json_decode($json_file, true);
+    $jsonArr = json_decode($json_file, true);
+    if( !array_key_exists($_GET['key'], $jsonArr) ){
+        die("slug does not exist");
+    }
 
-    $data = $json[$_GET['key']];
+    $data = $jsonArr[$_GET['key']];
 ?>
 
 
@@ -43,7 +55,7 @@
                     <li class="list-group-item"><b>Thickness:</b> <?= $data['thickness']?> Cm</li>
                 </ul>
                 <br>
-                <a href="ProductList_index.php" class="btn btn-primary">Back to Home</a>
+                <a href="ProductList_index.php" class="btn btn-primary mx-2 mb-3">Back to Home</a>
 
             </div>
         </div>
