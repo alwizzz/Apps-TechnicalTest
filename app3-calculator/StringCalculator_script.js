@@ -34,17 +34,13 @@ function validate(left, op, right){
     if( isNaN(left) || op == undefined || isNaN(right) ){
         return "Invalid Input!";
     }
-
     if( op != '+' && op != '-' && op != '*' && op != '/'){
         return "Invalid Input: operator is not recognized or supported!";
     }
-
     if( left > 1000000 || right > 1000000){
         return "Invalid Input: number can not be more than 1000000 !";
     }
-
     
-
     // if code reach here it means no error
     return "clear";
 }
@@ -64,7 +60,7 @@ function kalkulator(inputString, operationBox = null){
         return error;
     }
 
-    // display back sanitized input string
+    // display back validated input string if operationBox parameter is assigned
     if(operationBox != null){
         operationBox.val( `${leftOperand.toString()} ${operator} ${rightOperand.toString()}`);
     }
@@ -81,8 +77,4 @@ function kalkulator(inputString, operationBox = null){
     }
 
     return result;
-
-    // console.log(error);
-    // console.log(`left: ${leftOperand}, operator: ${operator}, right: ${rightOperand}`);
-
 }
