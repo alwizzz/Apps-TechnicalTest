@@ -82,7 +82,8 @@
                         </a> -->
                         <form action="ProductList_remove.php" method="post">
                             <input type="text" value="<?= $key;?>" hidden name="key">
-                            <input type="submit" class="btn btn-danger mx-1" value="Remove" name="remove">
+                            <input type="submit" class="btn btn-danger mx-1" value="Remove" name="remove"
+                                onclick="return confirm('Are you sure you want to remove this product?')">
                         </form>
                     </div>
                 </td>
